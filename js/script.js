@@ -27,7 +27,7 @@ function renderDestination(index) {
       <div class="moonDetails animate__animated animate__fadeInRight">
         <nav class="moonNav">
           <ul>
-            <li><a class="moon-link ${index === 0 ? 'active' : ''}" href="/space-tourism-website-main/starter-code/destination-moon.html">MOON</a></li>
+            <li><a class="moon ${index === 0 ? 'active' : ''}" href="#">MOON</a></li>
             <li><a class="mars ${index === 1 ? 'active' : ''}" href="#">MARS</a></li>
             <li><a class="europa ${index === 2 ? 'active' : ''}" href="#">EUROPA</a></li>
             <li><a class="titan ${index === 3 ? 'active' : ''}" href="#">TITAN</a></li>
@@ -59,7 +59,10 @@ function setupNavigation() {
 
   // Event delegation: Reattach click events after rendering
   moon.addEventListener('click', function (e) {
-    if (e.target.matches('.mars')) {
+    if (e.target.matches('.moon')) {
+      e.preventDefault();
+      renderDestination(0);
+    } else if (e.target.matches('.mars')) {
       e.preventDefault();
       renderDestination(1);
     } else if (e.target.matches('.europa')) {

@@ -10,7 +10,7 @@
 body {
     font-family:"Roboto", "Tagesschrift" !important;
    
-     background-image: url(/space-tourism-website-main/starter-code/assets/destination/background-destination-desktop.jpg);
+     background-image: url(/assets/destination/background-destination-desktop.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -135,9 +135,9 @@ a{
 .left, .close, .ham{
     display: none !important;
 }
-@media screen and (min-width:426px) and (max-width:768px) {
+@media screen and (max-width:1000px) {
         body {
-    background-image: url(/space-tourism-website-main/starter-code/assets/crew/background-crew-tablet.jpg);
+    background-image: url(/assets/crew/background-crew-tablet.jpg);
   }
     
   header{
@@ -164,9 +164,9 @@ a{
 
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:510px) {
     body {
-        background-image: url(/space-tourism-website-main/starter-code/assets/crew/background-crew-mobile.jpg);
+        background-image: url(/assets/crew/background-crew-mobile.jpg);
         color: gold;
         padding: 0;
     }

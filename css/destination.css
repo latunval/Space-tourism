@@ -1,32 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap");
 
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family:"Roboto", "Tagesschrift" !important;
-
-    background-image: url(/space-tourism-website-main/starter-code/assets/technology/background-technology-desktop.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  font-family: "Roboto", "Tagesschrift" !important;
+  color: #fff;
+  background-image: url(/assets/destination/background-destination-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.techs{
-    color: #fff;
-
+.moons {
+  /* height: fit-content; */
+  /* padding: 10px 0 10px 30px; */
+  color: #fff;
 }
 
+/* .logo{
+    display: inline-block;
+
+} */
 header {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0 165px auto !important;
+    margin: 20px 0 50px auto !important;
     /* border: 2px solid red; */
 }
 .line {
@@ -74,82 +78,93 @@ header {
     /* height: 2px; */
     border-bottom: 3px solid #fff;
 }
-.nav-bar a{
-    /* display: flex; */
-    text-decoration: none;
-    color: #fff;
-    /* margin: 20px auto; */
-    padding-bottom: 20px;
-}
 
-.navs{
-display: flex;
-flex-direction: column;
-gap: 20px;
+/* space section  */
+
+.moon > h2 {
+  margin: 0 140px 130px;
 }
-.navs li{
-     padding: 10px;
-    height: 60px;
-    width: 60px;
-    border:  2px solid #fff;
-    color: #353333;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    list-style-type: none;
-}
-.act{
-    background-color: #fff;
-   
-}
-.all{
-  width: 90%;
+.moonDisplay {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
   /* border: 2px solid red; */
-  margin: 10px 0 10px auto;
-}
-.techs{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* justify-content: spa ce-between; */
-    gap: 40px;
-}
-.details{
-    /* border: 2px solid red; */
-    width: 48%;
-    /* justify-content: center; */
-}
-.details h1{
-    margin: 20px 0;
-    font-size: 4rem;
-}
-.details p {
-    width: 28.4rem;
-    line-height: 30px;
-    opacity: 0.7;
-}
-.img {
-    /* border: 2px solid red; */
-    width: 48%;
-    display: flex;
-    /* justify-content: center; */
-}
-.img img {
-    width: 100%;
-    height: 73vh;
-} 
-.left, .close, .ham{
-    display: none !important;
+  margin: 10px auto;
+  /* height: fit-content; */
 }
 
-@media screen and (min-width:426px) and (max-width:768px) {
-        body {
-    background-image: url(/space-tourism-website-main/starter-code/assets/technology/background-technology-tablet.jpg);
+.img {
+  text-align: center;
+  width: 50%;
+  height: fit-content;
+}
+
+.moonDetails {
+  width: 50%;
+  padding: 20px;
+  /* border: 2px solid red; */
+}
+.moonDetails h1 {
+  font-size: 5rem;
+  font-weight: 350;
+  margin: 20px 0;
+}
+
+.act {
+  background-color: #fff;
+}
+.all {
+  width: 90%;
+  margin: 0 0 0 auto;
+  /* padding: 0 30px 0; */
+}
+
+.moonDetails > p {
+  width: 25rem;
+  line-height: 30px;
+  /* margin: 10px 0 30px; */
+  padding: 0 0 30px;
+  border-bottom: 2px solid #ccc;
+}
+.kilo {
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid red; */
+  width: 70%;
+  gap: 50px;
+  /* justify-content: center; */
+}
+article {
+  margin: 40px 0 !important;
+  /* border: 2px solid red; */
+  width: 50%;
+}
+.moonNav ul {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.moonNav ul li {
+  color: #fff;
+  padding: 10px 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none !important;
+  color: #fff !important;
+}
+
+.close,
+.ham {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  body {
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
     /* color: red; */
   }
-  
   header{
     /* border: 2px solid red; */
     padding: 0 !important;
@@ -174,39 +189,43 @@ gap: 20px;
   }
   .line{display: none !important;
   }
-  .techs {
+  
+  .moonDisplay {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    /* border: 2px solid red; */
+    width: 100% !important;
+    margin:  20px 0 !important;
+    padding: 0 !important;
+  /* border: 2px solid red; */
 }
-.details {
-    order: 3;
-    width: 100%;
+.moonDetails {
     text-align: center;
+  width: 100%;
+  /* padding: 20px; */
+  /* border: 2px solid red; */
 }
-.details p {
-    width: 100%;
+.moonDetails p, .kilo {
+    margin: 0 auto;
 }
 .img{
-    order: 1;
-    width: 100%;
+  margin: 0;
+  width: 80%;
+  /* border: 2px solid gold; */
 }
-.navs {
-    order: 2;
-    flex-direction: row;
-}
-
-
+.img img{
+  width: 100%;
 }
 
-@media screen and (max-width:425px) {
-    body {
-        background-image: url(/space-tourism-website-main/starter-code/assets/technology/background-technology-mobile.jpg);
-        color: gold;
-        padding: 0 !important;
-    }
-      header {
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    color: gold;
+    padding: 0;
+  }
+
+       header {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -291,38 +310,68 @@ padding: 0 !important;
 }
 .active {
     /* height: 2px; */
-    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    /* border-bottom: 0; */
 }
 
 
     .line{
         display: none !important;
     }
- .techs {
+
+ .all {
+    flex-direction: column;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* border: 2px solid red; */
+    width: 75%;
+    align-items: start !important;
+  }
+  .line{display: none !important;
+  }
+  /* .moon{
+border: 2px solid gold;
+padding: 0 !important;
+width: 70%;
+  } */
+  
+  .moonDisplay {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    /* border: 2px solid red; */
-    margin: 0 !important;
+    width: 100% !important;
+    margin:  20px 0 !important;
+    padding: 0 !important;
+  /* border: 2px solid red; */
 }
-.all{
-    /* border: 2px solid red; */
-  width: 100%;
-}
-.details {
-    order: 3;
-    width: 100%;
+.moonDetails {
     text-align: center;
+  width: 100%;
+  /* padding: 20px; */
+  /* border: 2px solid red; */
 }
-.details p {
-    width: 100%;
+.moonDetails p{
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid red !important; */
+}
+.kilo{
+  flex-direction: column;
+  gap: 20px;
+  /* border: 2px solid red; */
+}
+article{
+  width: 100%;
+  margin: 0 !important;
+}
+.moonDetails p, .kilo {
+    margin: 20px auto;
 }
 .img{
-    order: 1;
-    width: 100%;
+  margin: 0;
+  width: 80%;
+  /* border: 2px solid gold; */
 }
-.navs {
-    order: 2;
-    flex-direction: row;
+.img img{
+  width: 100%;
 }
 }

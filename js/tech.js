@@ -16,7 +16,7 @@ function renderDestination(index) {
   const save = store.technology[index];
 
   crew.innerHTML = `
-      <div class="navs animate__animated animate__fadeInDown">
+      <div class="navs">
           <li class="launch ${index === 0 ? 'act' : ''}">1</li>
           <li class="spaceSport ${index === 1 ? 'act' : ''}">2</li>
           <li class="capsule ${index === 2 ? 'act' : ''}">3</li>

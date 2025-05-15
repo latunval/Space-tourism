@@ -16,3 +16,7 @@ close.addEventListener('click', function () {
   // ham.style.display = 'block';
 });
 
+const explore = document.querySelector('.explore');
+explore.addEventListener('click', function(){
+  window.location.href =  `/html/destination-moon.html`;
+})
